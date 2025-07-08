@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login & Signup with OTP</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <!-- Signup Section -->
+  <div id="signup" class="box">
+    <h2>Signup</h2>
+    <input type="text" id="signup-name" placeholder="Full Name" />
+    <input type="text" id="signup-username" placeholder="Username" />
+    <input type="password" id="signup-password" placeholder="Password" />
+    <button onclick="signup()">Sign Up</button>
+  </div>
+
+  <!-- Login Section -->
+  <div id="login" class="box hidden">
+    <h2>Login</h2>
+    <input type="text" id="login-username" placeholder="Username" />
+    <input type="password" id="login-password" placeholder="Password" />
+    <button onclick="login()">Login</button>
+  </div>
+
+  <!-- Dashboard Section -->
+  <div id="dashboard" class="box hidden">
+    <h2>Welcome to Dashboard</h2>
+    <p>OTP: <span id="otp-display"></span></p>
+    <input type="text" id="otp-input" placeholder="Enter OTP" />
+    <button onclick="verifyOTP()">Verify OTP</button>
+    <p id="otp-status"></p>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

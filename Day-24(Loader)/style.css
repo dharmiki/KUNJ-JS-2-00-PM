@@ -1,0 +1,112 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 100%;
+            height: 100vh;
+            background: #011015;
+            font-family: sans-serif;
+        }
+
+        .loader-box {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: #011015;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 1000;
+        }
+
+        .ring {
+            width: 200px;
+            height: 200px;
+            border: 4px solid #011015;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .ring:nth-child(1) {
+            border-bottom-width: 8px;
+            border-color: rgb(255, 0, 255);
+            animation: rotate1 2s linear infinite;
+        }
+
+        .ring:nth-child(2) {
+            border-right-width: 8px;
+            border-color: rgb(0, 247, 255);
+            animation: rotate2 2s linear infinite;
+        }
+
+        .ring:nth-child(3) {
+            border-top-width: 8px;
+            border-color: rgb(0, 255, 13);
+            animation: rotate3 2s linear infinite;
+        }
+
+        .loading {
+            color: white;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        @keyframes rotate1 {
+            0% { transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg); }
+            100% { transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg); }
+        }
+
+        @keyframes rotate2 {
+            0% { transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg); }
+            100% { transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg); }
+        }
+
+        @keyframes rotate3 {
+            0% { transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg); }
+            100% { transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg); }
+        }
+
+        /* .content {
+            display: none;
+            padding: 40px;
+            color: #fff;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .about, .services {
+            margin-bottom: 30px;
+        }
+
+        .about h2, .services h2 {
+            color: #00ffc3;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style: disc;
+            margin-left: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #ccc;
+        } */
+
+
+

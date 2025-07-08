@@ -1,0 +1,145 @@
+body {
+  /* background: linear-gradient(to right, #f5f7fa, #c3cfe2); */
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background: #2A7B9B; */
+  background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+}
+
+h2 {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 32px;
+  font-weight: 600;
+  color: #2f3640;
+  text-shadow: 1px 1px 2px #ccc;
+}
+
+.container {
+  animation: fadeIn 0.6s ease;
+}
+
+.input-group {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.input-group input {
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  transition: 0.3s;
+  outline: none;
+}
+
+.input-group input:focus {
+  box-shadow: inset 0 0 5px rgba(13, 202, 240, 0.5);
+}
+
+#addUser {
+  border: none;
+  padding: 14px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(45deg, #0dcaf0, #0a95c9);
+  color: white;
+  transition: 0.4s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#addUser::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: left 0.4s ease;
+  z-index: 0;
+}
+
+#addUser:hover::before {
+  left: 100%;
+}
+
+#addUser:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.table {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+thead {
+  background: linear-gradient(to right, #0dcaf0, #0a95c9);
+  color: white;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+th, td {
+  padding: 15px;
+  vertical-align: middle;
+  font-size: 15px;
+}
+
+tbody tr {
+  transition: all 0.3s ease;
+}
+
+tbody tr:hover {
+  background-color: #eaf6ff;
+  transform: scale(1.01);
+}
+
+.fa-pen-to-square, .fa-trash {
+  cursor: pointer;
+  font-size: 18px;
+  padding: 8px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.fa-pen-to-square {
+  background-color: #0dcaf0;
+  color: white;
+}
+
+.fa-trash {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.fa-pen-to-square:hover {
+  background-color: #0a95c9;
+  transform: scale(1.15);
+}
+
+.fa-trash:hover {
+  background-color: #c0392b;
+  transform: scale(1.15);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
