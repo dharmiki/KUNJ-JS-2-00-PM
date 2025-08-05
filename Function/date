@@ -1,0 +1,9 @@
+| Function               | Example                     | Output         | Use                           |
+|------------------------|-----------------------------|----------------|-------------------------------|
+| new Date()             | new Date()                  | Full date/time | Get current date              |
+| getFullYear()          | date.getFullYear()          | 2025           | Extract year                  |
+| getMonth()             | date.getMonth()             | 0–11           | Extract month (Jan = 0)       |
+| getDate()              | date.getDate()              | 1–31           | Extract day of month          |
+| getDay()               | date.getDay()               | 0–6            | Get day of week (0 = Sunday)  |
+| toLocaleDateString()   | date.toLocaleDateString()   | dd/mm/yyyy     | Format for display            |
+

@@ -1,0 +1,7 @@
+| Function         | Example                | Output   | Use                                      |
+| ---------------- | ---------------------- | -------- | ---------------------------------------- |
+| parseInt("42")   | parseInt("42")         | 42       | Convert string input to number           |
+| parseFloat()     | parseFloat("3.14")     | 3.14     | Convert decimal string to float          |
+| Number("123")    | Number("123")          | 123      | General string to number conversion      |
+| isNaN("abc")     | isNaN("abc")           | true     | Validate number input                    |
+| toFixed(2)       | (3.14159).toFixed(2)   | "3.14"   | Format decimals (e.g., prices, currency) |

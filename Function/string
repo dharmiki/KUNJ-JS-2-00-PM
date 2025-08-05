@@ -1,0 +1,12 @@
+| Function        | Example                      | Output          | Use (Why/Where)                                |
+| --------------- | ---------------------------- | --------------- | ---------------------------------------------- |
+| length        | "hello".length                 | 5               | Count characters (e.g., password length check) |
+| toUpperCase() | "hi".toUpperCase()             | "HI"            | Format user input (e.g., names/emails)         |
+| toLowerCas()  | "HI".toLowerCase()             |"hi"             | Case-insensitive search                        |
+| charAt(1)`    | "dog".charAt(1)                | "o"             | Get a specific character                       |
+| slice(1,4)    | "hello".slice(1,4)             | "ell"           | Extract part of a string                       |
+| replace()     | "I am A".replace("A", "B")     | "I am B"        | Fix or censor words                            |
+| trim()        | "  text  ".trim()              | "text"          | Clean user input                               |
+| includes("a") | "apple".includes("a")          | true            | Check for keyword in search                    |
+| split(",")    | "a,b,c".split(",")             | ["a","b","c"]   | Convert CSV to array                           |
+| concat()      | "Hello".concat("World")        | "Hello World"   | Merge strings                                  |

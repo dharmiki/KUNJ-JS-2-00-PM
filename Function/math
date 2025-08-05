@@ -1,0 +1,11 @@
+| Function        | Example              | Output | Use                                      |
+| --------------- | -------------------- | ------ | ---------------------------------------- |
+| Math.round()    | Math.round(4.6)      | 5      | Round to nearest (e.g., scores, ratings) |
+| Math.floor()    | Math.floor(4.9)      | 4      | Round down (e.g., pagination, indexing)  |
+| Math.ceil()     | Math.ceil(4.2)       | 5      | Round up (e.g., item count pages)        |
+| Math.random()   | Math.random()        | 0–1    | Random values (e.g., games, OTPs)        |
+| Math.max()      | Math.max(1, 5, 10)   | 10     | Find largest value                       |
+| Math.min()      | Math.min(1, 5, 10)   | 1      | Find smallest value                      |
+| Math.pow(2,3)   | Math.pow(2, 3)       | 8      | Exponents (e.g., powers, calculations)   |
+| Math.sqrt(25)   | Math.sqrt(25)        | 5      | Square root calculations                 |
+| Math.abs(-5)    | Math.abs(-5)         | 5      | Positive only (e.g., distances)          |

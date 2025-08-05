@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS using create multiple divs</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .parent{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        background-color: black;
+        
+        padding: 70px 5vw;
+           }
+    .child{
+        width: 300px;
+        background-color: #212121; 
+        box-shadow: 0px 0px 20px grey;
+        border-radius: 10px;
+        overflow: hidden;
+        z-index: 1;
+        height: 400px;
+    }
+    .child img{
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .child h2{
+        font-size: 28px;
+        padding: 7px 25px 0px 25px;
+        color: #F5F5F5;
+    }
+    .child p{
+        font-size: 18px;
+        font-weight: 500;
+        padding: 5px 25px 15px 25px;
+        color: blue;
+    }
+    .child button{
+        margin: 0px 0px 20px 25px;
+        padding: 10px 22px;
+        border-radius: 7px;
+        border: none;
+        cursor: pointer;
+        transition: .6s;
+        font-size: 17px;
+        color: white;
+        background-color: white;
+        color: #212121;
+    }
+    .child:hover button{
+        box-shadow: 0px 0px 7px grey;
+        background-color: transparent;
+        color: grey;
+    }
+  
+</style>
+<body>
+    <div class="parent" id="container"></div>
+
+    <script>
+        let images = ["https://www.carlington.in/cdn/shop/files/Carlington_elite_analog_ladies_watch_CT_2007_roseblack.jpg?v=1696689556",
+        "https://justintime.in/cdn/shop/files/Mens_Watches_M_1500x.jpg?v=8590229654416472155",
+        "https://assets.wahsoshiok.com/wp-content/uploads/2022/10/casio-collection-duro-mdv-107-1a2vef-218691-278936_860.jpg",
+        "https://s.alicdn.com/@sc04/kf/H3d921237e2fc4ce8b2a0b78a8251bb4f6.jpg_300x300.jpg",
+        "https://dazzle.com.pk/wp-content/uploads/2023/04/Black-Dial-Golden-Citizen-Men-Watch-300x300.png",
+        "https://s.alicdn.com/@sc04/kf/Hcc54c5cf3e284e95b38d46900ac312ecO.jpg_200x200q50.jpg",
+        "https://www.penguin.com.bd/wp-content/uploads/2023/08/3287NL01_3.webp",
+        "https://images.meesho.com/images/products/350019787/l4bfo_512.jpg",
+        "https://i.pinimg.com/736x/75/ee/d5/75eed5fd6936d12fd431b6a8fa628b3a.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJFZvIRJ7ZlSwBGGCnIMb3KvgJEZ1j1zdpEpTEvqFg1WSEAIjwXohgIpHuuyv-PeyMXkc&usqp=CAU",
+        "https://m.media-amazon.com/images/I/71RfHs9lZFL._AC_UY1000_.jpg",
+        "https://reflexions.pk/wp-content/uploads/2023/10/20240416_210214-600x600.webp",
+        "https://5.imimg.com/data5/ANDROID/Default/2024/5/420484373/CY/NQ/QZ/220099131/product-jpeg-250x250.jpg",
+        "https://5.imimg.com/data5/KE/VQ/ZG/ANDROID-66808883/img-20190713-072734-163-jpg-500x500.jpg",
+        "https://5.imimg.com/data5/AA/CF/DJ/ANDROID-42692862/product-jpeg-500x500.jpg"];
+
+        let product = ["carlington","stylish and classic ","Pilot","calinv watch","fastrack ","sonata","titan","raga","vyb","pulse","edge","police","tommy & higfiger","kenneth cole","anne klein","coach"];
+
+        let price = ["₹ 999.000","₹ 1500","₹ 1320","₹ 2500","₹ 599","₹ 7000","₹ 3500","₹ 449","₹ 2,199","₹ 32,899","₹ 1,439","₹ 19,999","₹ 22,459","₹ 39,999","₹ 79,999","₹ 1,499"];
+
+        let button = ["Read more","Read more","Read more","Read more","Read more","Read more","Read more","Read more","Read more","Read more","Read more","Read more","Read more","Read more","Read more","Read more"];
+
+        let container = document.getElementById("container");
+        for(let i = 0; i < 15; i++) {
+            let div = document.createElement("div");
+            div.setAttribute("class", "child");
+
+            let img = document.createElement("img");
+            img.setAttribute("src", images[i]);
+
+            let pdt = document.createElement("h2");
+            pdt.innerText = product[i]; 
+
+            let pr = document.createElement("p");
+            pr.innerText = price[i]; 
+
+            let btn = document.createElement("button");
+            btn.innerText = button[i]; 
+            
+            div.appendChild(img);
+            div.appendChild(pdt);
+            div.appendChild(pr);
+            div.appendChild(btn);
+            container.appendChild(div);
+        }
+    </script>
+</body>
+</html>

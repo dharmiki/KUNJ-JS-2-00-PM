@@ -1,0 +1,11 @@
+| Function          | Example                     | Use                                   |
+| ----------------- | --------------------------- | ------------------------------------- |
+| alert()           | alert("Hello")              | Show warning or message               |
+| prompt()          | prompt("Your name?")        | Ask user input                        |
+| confirm()         | confirm("Are you sure?")    | Get Yes/No response                   |
+| console.log()     | console.log("debug")        | Print to browser console              |
+| typeof            | typeof 42                   | Get variable data type                |
+| setTimeout()      | setTimeout(()=>{}, 1000)    | Run code after delay                  |
+| setInterval()     | setInterval(()=>{}, 1000)   | Run code again and again at intervals |
+| clearInterval()   | clearInterval(id)           | Stop repeated code                    |
+
