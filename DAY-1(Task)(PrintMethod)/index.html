@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-1</title>
+</head>
+<body>
+    <h1 id="information" style="font-size: 13px;"></h1>
+    <script>
+        function studentDisplay() {
+            let name = "John"
+            let age = 18
+            let passed = "true"
+
+            alert("Welcome Student")
+
+            console.log(name)
+            console.log(age)
+            console.log(passed)
+                
+            document.write("My name is:: ", name,"<br>")
+            document.write("My age is::", age,"<br>")
+            document.write("Pass::", passed,"<br>")
+    
+            let detail = document.getElementById("information")
+            detail.innerHTML = `<h1>Student Details</h1>`
+        }
+        studentDisplay()
+    </script>
+</body>
+</html>
