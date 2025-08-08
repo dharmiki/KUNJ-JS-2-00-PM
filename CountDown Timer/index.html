@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instagram Similar Countdown Timer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="toggle-theme">
+    <label><input type="checkbox" id="themeToggle"> Toggle Light/Dark Mode</label>
+  </div>
+
+  <h1>Countdown Timer</h1>
+
+  <div class="input-section">
+    <div class="input-box">
+      <label>Days</label>
+      <input type="number" id="inputDays" min="0" placeholder="0">
+    </div>
+    <div class="input-box">
+      <label>Hours</label>
+      <input type="number" id="inputHours" min="0" max="23" placeholder="0">
+    </div>
+    <div class="input-box">
+      <label>Minutes</label>
+      <input type="number" id="inputMinutes" min="0" max="59" placeholder="0">
+    </div>
+    <div class="input-box">
+      <label>Seconds</label>
+      <input type="number" id="inputSeconds" min="0" max="59" placeholder="0">
+    </div>
+  </div>
+
+  <div class="timer">
+    <div class="box">
+      <input class="number" id="daysDisplay" readonly>
+      <div class="label-text">Days</div>
+    </div>
+    <div class="box">
+      <input class="number" id="hoursDisplay" readonly>
+      <div class="label-text">Hours</div>
+    </div>
+    <div class="box">
+      <input class="number" id="minutesDisplay" readonly>
+      <div class="label-text">Minutes</div>
+    </div>
+    <div class="box">
+      <input class="number" id="secondsDisplay" readonly>
+      <div class="label-text">Seconds</div>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <button onclick="startTimer()">Start</button>
+    <button onclick="stopTimer()">Stop</button>
+    <button onclick="resetTimer()">Reset</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
